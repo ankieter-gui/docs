@@ -1,8 +1,8 @@
 # Dla użytkownika
 
-##Opis interfejsu
+## Opis interfejsu
 
-##Panel główny
+## Panel główny
 
 W panelu głównym wyświetlają się ankiety oraz raporty, które są utworzone przez użytkownika lub, do których użytkownik ma uprawnienia.
 
