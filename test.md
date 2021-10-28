@@ -5,9 +5,14 @@
 1. Etykiety mają sensowne wartości (~~**undefined**~~, ~~**0**~~).
 2. Etykiety wyświetlają się poprawnie (nie są poucinane). 
 
+#### Dane
+1. Dane z ankiet w roku akademickim 2019/2020 zgadzają się z raportem uczelnianym. 
+
 #### Pola tekstowe
 1. Da się utworzyć pole tekstowe.
 2. Da się zmienić kolejność pól tekstowych.
+3. Działa usuwanie pola tekstowego/wykresu.
+4. Działa duplikowanie pola tekstowego/wykresu.
 
 #### Wykresy
 1. Da się utworzyć wykres **Zgrupowany procent + dane**.
@@ -19,6 +24,8 @@
 #### Wydajność
 1. Wykresy na raporcie ładują się w zadowalającym czasie. 
 
+#### Paginacja
+1. Działa przycisk ile elementów na stronę.
 
 ## Pozostałe
 1. Admin może dodać użytkownika.
