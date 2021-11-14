@@ -1,5 +1,3 @@
-# Wstęp
-
 # Informacja licencyjna
 
 Oprogramowanie Ankieter+ jest udostępnione na 2-klauzulowej licencji BSD.

@@ -1,5 +1,3 @@
-# Dla administratora
-
 ## Instalacja
 Strona serwerowa Ankieter+ do poprawnego działania wymaga języka Python w wersji 3.9.5. Wymagane są także dodatkowe biblioteki języka Python zawarte w pliku "requirements". W celu zainstalowania tych bibliotek należy w wierszu poleceń, będąc w folderze backend/ wykonać polecenie:
 
