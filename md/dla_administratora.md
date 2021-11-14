@@ -1,4 +1,4 @@
-## Instalacja
+# Instalacja
 Strona serwerowa Ankieter+ do poprawnego działania wymaga języka Python w wersji 3.9.5. Wymagane są także dodatkowe biblioteki języka Python zawarte w pliku "requirements". W celu zainstalowania tych bibliotek należy w wierszu poleceń, będąc w folderze backend/ wykonać polecenie:
 
     python3 -m pip install -r requirements.txt
@@ -22,18 +22,18 @@ Aby uruchomić serwer należy w folderze backend/ wykonać następujące polecen
 
 
    
-## Konfiguracja
+# Konfiguracja
 W pliku config.py znajdują się następujące parametry które należy skonfigurować:
 
-## Logika uprawnień
-#### Użytkownicy
+# Logika uprawnień
+## Użytkownicy
 Każdy użytkownik systemu Ankieter+ ma przypisany jedną z następujących ról:
 
  - "s": superuser - użytkownik z uprawnieniami administratora, ma on wgląd we wszystkie ankiety i raporty utworzone w systemie oraz dostęp do panelu zarządzania użytkownikami i grupami.
  - "u": user - zwykły użytkownik, mogący tworzyć, udostępniać i oglądać/edytować udostępnione mu ankiety.
  - "g": guest - każdy niezalogowany/niedodany do systemu użytkownik, ma wgląd tylko w raporty udostępnione publicznie lub przez link.
 
-#### Raporty oraz ankiety
+## Raporty oraz ankiety
 Każdy użytkownik może mieć nadane jedno z następujących rodzajów uprawnień do każdej/każdego z ankiet/raportów w systemie:
 
  - "o": owner - właściciel ankiety/raportu, posiada prawa do odczytu, edycji, kopiowania, udostępniania oraz usuwania danego obiektu.

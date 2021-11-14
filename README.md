@@ -1,12 +1,12 @@
-### Table of contents
+# Table of contents
 
 ```
 modules.rst
 ```
 
-### Update documentation
+# Update documentation
 
 ```shell    
-./make html
+make html
 ```
 

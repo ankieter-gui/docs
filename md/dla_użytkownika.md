@@ -1,6 +1,6 @@
-## Opis interfejsu
+# Opis interfejsu
 
-## Panel główny
+# Panel główny
 
 W panelu głównym wyświetlają się ankiety oraz raporty, które są utworzone przez użytkownika lub, do których użytkownik ma uprawnienia.
 
@@ -21,9 +21,9 @@ Albo takie, które są użytkownikowi udostępnione.
 
 ![img_7.png](../img/img_7.png)
 
-## Edytor ankiet
+# Edytor ankiet
 
-### Dodawanie wyników z ankiety
+## Dodawanie wyników z ankiety
 
 1. W panelu głównym należy kliknąć  `Nowa ankieta`.  
    ![img_9.png](../img/img_9.png)
@@ -34,12 +34,12 @@ Albo takie, które są użytkownikowi udostępnione.
 4. Należy kliknąć przycisk `OK`. Wyniki ankiety zostaną dodane i wyświetlą się w panelu głównym.  
    ![img_12.png](../img/img_12.png)
 
-## Edytor raportów
+# Edytor raportów
 
-### Utworzenie raportu z ankiety
+## Utworzenie raportu z ankiety
 
-## Udostępnianie (imienne, grupami, linkami)
+# Udostępnianie (imienne, grupami, linkami)
 
-## Artykuł: Jak przeprowadzić ankietę i analizę?
+# Artykuł: Jak przeprowadzić ankietę i analizę?
 
-## Artykuł: Jak dodać własne dane lub projekt ankiety?
+# Artykuł: Jak dodać własne dane lub projekt ankiety?
