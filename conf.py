@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.abspath('..'))
 
 project = 'Ankieter+'
 copyright = '2021, UAM'
-author = 'UAM'
+author = 'Aleksander Kiryk, Emil Markiewicz, Rafał Piotrowski, Wojciech Wiśniewski'
 
 
 # -- General configuration ---------------------------------------------------
