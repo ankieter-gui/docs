@@ -43,7 +43,9 @@ exclude_patterns = [
     'Thumbs.db',
     '.DS_Store',
     'README.md',
-    'tests/test.md'
+    'tests/test.md',
+    'daemon.rst',
+    'globals.rst'
 ]
 
 
