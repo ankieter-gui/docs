@@ -1,9 +1,9 @@
 # Informacja licencyjna
 
 Oprogramowanie Ankieter+ jest udostępnione na 2-klauzulowej licencji BSD.
-W celu zdobycia szczegłówych informacji o warunkach użytkowania nałożonych
-przez tę licencję, należy zajrzeć do pliku `LICENSE` udostępnionego
-zarówno z tą dokumentacją jak i z kodem źródłowym tego oprogramowania.
+W celu zdobycia szczegółowych informacji o warunkach użytkowania nałożonych
+przez tę licencję należy zajrzeć do pliku `LICENSE` udostępnionego
+zarówno z tą dokumentacją, jak i z kodem źródłowym tego oprogramowania.
 
 
 # O Ankieterze+
@@ -35,5 +35,5 @@ każda trzymana jest w osobnym pliku Markdown. Części te zawierają
 następujące informacje:
 1. Wstęp (`wstęp.md`): zawiera podstawowe informacje o systemie oraz strukturze dokumentacji.
 2. Dla użytkownika (`dla użytkownika.md`): zawiera informacje o obsłudze strukturze interfejsu, instrukcję obsługi edytora ankiet, edytora raportów, opis możliwości udostępniania oraz przewodnik pozwalający na utworzenie ankiety, przeprowadzenie jej oraz analizę danych w niej zebranych.
-3. Dla administratora (`dla administratora.md`): zawiera informacje o instalacji systemu, jego konfiguracji, sposobie w jaki w systemie działają uprawnienia oraz opis mechanizmu zarządzania użytkownikami oraz grupami.
+3. Dla administratora (`dla administratora.md`): zawiera informacje o instalacji systemu, jego konfiguracji, sposobie, w jaki w systemie działają uprawnienia oraz opis mechanizmu zarządzania użytkownikami i grupami.
 4. Dla programisty (`dla programisty.md`): jest to techniczna część dokumentacji, zawiera opis API, dokumentację silnika, kodu interfejsu oraz struktury bazy danych.

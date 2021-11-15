@@ -29,10 +29,8 @@ Dla programisty
    :maxdepth: 4
 
    md/dla_programisty.md
-   daemon
    database
    error
-   globals
    grammar
    setup
    table

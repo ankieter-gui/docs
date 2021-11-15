@@ -20,10 +20,23 @@ Aby uruchomić serwer należy w folderze backend/ wykonać następujące polecen
 
     python3 -m flask run
 
-
+# Wydanie nowej wersji
+Kod ankietera znajduje się w repozytoriach.
+Aby wydać nową wersję, należy uruchomić skrypt w repozytorium release.
+```
+update.sh
+git push
+```
    
 # Konfiguracja
-W pliku config.py znajdują się następujące parametry które należy skonfigurować:
+W pliku config.py znajdują się następujące parametry, które należy skonfigurować:
+
+# Deployment
+W celu uruchomienia aplikacji należy uruchomić skrypt na serwerze.
+
+```
+./update.sh
+```
 
 # Logika uprawnień
 ## Użytkownicy
