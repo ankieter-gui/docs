@@ -2,18 +2,17 @@
 
 # Panel główny
 
-W panelu głównym wyświetlają się ankiety oraz raporty, które są utworzone przez użytkownika lub, do których użytkownik ma uprawnienia.
+Po zalogowaniu, w panelu głównym wyświetlają się ankiety oraz raporty, które są utworzone przez użytkownika lub, do których użytkownik ma uprawnienia.
 
 ![img_1.png](../img/img_1.png)
 
 Można zawęzić widok do ankiet lub raportów.
 
-
 ![img_4.png](../img/img_4.png)
 
 ![img_5.png](../img/img_5.png)
 
-Można wyświetlić te ankiety/raporty, które są utworzone przez użytkownika. 
+Można wyświetlić te ankiety/raporty, które są utworzone przez użytkownika.
 
 ![img_6.png](../img/img_6.png)
 
@@ -25,21 +24,18 @@ Albo takie, które są użytkownikowi udostępnione.
 
 ## Dodawanie wyników z ankiety
 
-1. W panelu głównym należy kliknąć  `Nowa ankieta`.  
-   ![img_9.png](../img/img_9.png)
-2. Wyświetli się okno:  
-   ![img_8.png](../img/img_8.png)
-3. W oknie należy podać nazwę nowej ankiety, umieścić plik `.csv` z wynikami ankiety oraz plik `.xml` ze strukturą ankiety.  
-   ![img_10.png](../img/img_10.png)
-4. Należy kliknąć przycisk `OK`. Wyniki ankiety zostaną dodane i wyświetlą się w panelu głównym.  
-   ![img_12.png](../img/img_12.png)
+W panelu głównym należy kliknąć  `Nowa ankieta`.  
 
-# Edytor raportów
+![img_9.png](../img/img_9.png)
 
-## Utworzenie raportu z ankiety
+Wyświetli się okno:  
 
-# Udostępnianie (imienne, grupami, linkami)
+![img_8.png](../img/img_8.png)
 
-# Artykuł: Jak przeprowadzić ankietę i analizę?
+W oknie należy podać nazwę nowej ankiety, umieścić plik `.csv` z wynikami ankiety oraz plik `.xml` ze strukturą ankiety.  
 
-# Artykuł: Jak dodać własne dane lub projekt ankiety?
+![img_10.png](../img/img_10.png)
+
+Należy kliknąć przycisk `OK`. Wyniki ankiety zostaną dodane i wyświetlą się w panelu głównym.  
+
+![img_12.png](../img/img_12.png)
