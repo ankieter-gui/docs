@@ -29,6 +29,7 @@ Dla programisty
    :maxdepth: 4
 
    md/dla_programisty.md
+   convert
    database
    error
    grammar
