@@ -29,7 +29,8 @@ author = 'Aleksander Kiryk, Emil Markiewicz, Rafał Piotrowski, Wojciech Wiśnie
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'myst_parser'
+    'myst_parser',
+    'rst2pdf.pdfbuilder'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -48,6 +49,9 @@ exclude_patterns = [
     'globals.rst'
 ]
 
+# language = 'pl'
+
+
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -60,3 +64,15 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 # html_static_path = ['_static']
+
+latex_elements = {
+  'extraclassoptions': 'oneside'
+}
+
+latex_documents = [
+    'index',
+    'ankieter.tex',
+    u'Ankieter+',
+    u'Aleksander Kiryk, Emil Markiewicz, \\and Rafał Piotrowski, Wojciech Wiśniewski',
+    'manual'
+],
