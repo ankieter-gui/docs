@@ -57,20 +57,20 @@ W elemencie `<section class="query-marker"></section>` dodajemy markup
 ```
  Do uzupełniania: tooltip, miniaturka, nazwa i `(click)="pickPreset('MyChart');"`,  gdzie MyChart to nazwa naszego nowego wykresu identyczną z ustaloną wcześniej.
 
-1. Do funkcji pickPreset w tym samym pliku dopisujemy klucz do słownika `fun`.
+1. Do funkcji pickPreset w tym samym pliku dopisujemy klucz do słownika `fun`. ..
 ..
- Wartością jest funkcja bez argumentów która ustawia różne parametry charakterystyczne dla tego rodzaju wykresu. I sposób w jaki układane jest zapytanie do bazy danych.
+ Wartością jest funkcja bez argumentów która ustawia różne parametry charakterystyczne dla tego rodzaju wykresu i sposób w jaki układane jest zapytanie do bazy danych. ..
 ..
- Możemy schować prawą kolumnę `Grupuj przez` ustawiając `this.hideGrupBy=true;`, schować panel wybierania rodzajów agregeacji ` this.hideData=true;`.
+ Możemy schować prawą kolumnę `Grupuj przez` ustawiając `this.hideGrupBy=true;`, schować panel wybierania rodzajów agregeacji ` this.hideData=true;`. ..
 ..
- Zmienić zachowania po kliknięciu jakiegoś elementu interfejsu:
+ Zmienić zachowania po kliknięciu jakiegoś elementu interfejsu: ..
 `this.onPickQuestion=(question)=>{}`
 `this.byPickerClick = (by) => {}`
-
- Ustawić domyślny typ agregacji: `  this.chartData.dataQuery.as[0]='share'`
-
- Ustawić domyślny typ grupowania ` this.chartData.dataQuery.by[0] = "*"`
-
+..
+ Ustawić domyślny typ agregacji: `  this.chartData.dataQuery.as[0]='share'`..
+..
+ Ustawić domyślny typ grupowania ` this.chartData.dataQuery.by[0] = "*"`..
+..
  Lub zrobić cokolwiek innego co jest potrzebne aby umożliwić użytkownikowi wybranie wszystkich potrzebnych opcji.
 
 1. Teraz należy wyświetlić gotowy wykres. Do fragmentu `  <section class="chart-area" *ngIf="['multipleChoice', 'groupedBars', 'multipleBars', 'linearCustomData', 'summary','groupSummary', 'multipleBarsOwnData'].includes(chartData.config.type)  && this.echartOptions">` należy dopisać nasz typ wykresu żeby się wyświetlał w domyślnym trybie - jako prosty wykres generowany na podstawie `options`
