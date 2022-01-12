@@ -58,11 +58,11 @@ W elemencie `<section class="query-marker"></section>` dodajemy markup
  Do uzupełniania: tooltip, miniaturka, nazwa i `(click)="pickPreset('MyChart');"`,  gdzie MyChart to nazwa naszego nowego wykresu identyczną z ustaloną wcześniej.
 
 1. Do funkcji pickPreset w tym samym pliku dopisujemy klucz do słownika `fun`.
-
+..
  Wartością jest funkcja bez argumentów która ustawia różne parametry charakterystyczne dla tego rodzaju wykresu. I sposób w jaki układane jest zapytanie do bazy danych.
-
+..
  Możemy schować prawą kolumnę `Grupuj przez` ustawiając `this.hideGrupBy=true;`, schować panel wybierania rodzajów agregeacji ` this.hideData=true;`.
-
+..
  Zmienić zachowania po kliknięciu jakiegoś elementu interfejsu:
 `this.onPickQuestion=(question)=>{}`
 `this.byPickerClick = (by) => {}`
