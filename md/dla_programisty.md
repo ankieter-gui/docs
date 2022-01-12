@@ -37,11 +37,11 @@ export class MyChartGenerator extends AbstractChartGenerator {
 `generate()` jest wywoływane jednorazowo przy każdej zmianie ustawień wykresu w UI przez użytkownika. `asJSONConfig()` zwraca `options` wykresu. Należy wkleić to co wygenerowaliśmy w kreatorze na stronie echarts z dodatkowym uzupełnieniem o serie danych.
 Serie danych pochodzą bezośrednio z response z serwera i są dostępne pod `this.rawSeries`
 
-1. Wybieramy tekstowy identyfikator klasy - może to być jej nazwa zapisana w klasie jako `static name = "MyChart"`
+2. Wybieramy tekstowy identyfikator klasy - może to być jej nazwa zapisana w klasie jako `static name = "MyChart"`
 
-1. Otwieramy plik `reports/editor/chart-editor-view.component.ts`
-1. Szykujemy obrazek-miniaturkę wykresu i umieszczamy ją w `assets/`
-1. W `reports/editor/chart-editor-view.component.ts` ctrl+f ` <nz-tab nzTitle="Wygląd i układ">` 
+3. Otwieramy plik `reports/editor/chart-editor-view.component.ts`
+4. Szykujemy obrazek-miniaturkę wykresu i umieszczamy ją w `assets/`
+5. W `reports/editor/chart-editor-view.component.ts` ctrl+f ` <nz-tab nzTitle="Wygląd i układ">` 
 W elemencie `<section class="query-marker"></section>` dodajemy markup
 
  ```html
@@ -57,7 +57,7 @@ W elemencie `<section class="query-marker"></section>` dodajemy markup
 ```
  Do uzupełniania: tooltip, miniaturka, nazwa i `(click)="pickPreset('MyChart');"`,  gdzie MyChart to nazwa naszego nowego wykresu identyczną z ustaloną wcześniej.
 
-1. Do funkcji pickPreset w tym samym pliku dopisujemy klucz do słownika `fun`. 
+6. Do funkcji pickPreset w tym samym pliku dopisujemy klucz do słownika `fun`. 
 <br> Wartością jest funkcja bez argumentów która ustawia różne parametry charakterystyczne dla tego rodzaju wykresu i sposób w jaki układane jest zapytanie do bazy danych. <br>
  Możemy schować prawą kolumnę `Grupuj przez` ustawiając `this.hideGrupBy=true;`, schować panel wybierania rodzajów agregeacji ` this.hideData=true;`. <br>
  Zmienić zachowania po kliknięciu jakiegoś elementu interfejsu: ..
@@ -67,9 +67,9 @@ W elemencie `<section class="query-marker"></section>` dodajemy markup
  Ustawić domyślny typ grupowania ` this.chartData.dataQuery.by[0] = "*"` <br>
  Lub zrobić cokolwiek innego co jest potrzebne aby umożliwić użytkownikowi wybranie wszystkich potrzebnych opcji.
 
-1. Teraz należy wyświetlić gotowy wykres. Do fragmentu `  <section class="chart-area" *ngIf="['multipleChoice', 'groupedBars', 'multipleBars', 'linearCustomData', 'summary','groupSummary', 'multipleBarsOwnData'].includes(chartData.config.type)  && this.echartOptions">` należy dopisać nasz typ wykresu żeby się wyświetlał w domyślnym trybie - jako prosty wykres generowany na podstawie `options`
+7. Teraz należy wyświetlić gotowy wykres. Do fragmentu `  <section class="chart-area" *ngIf="['multipleChoice', 'groupedBars', 'multipleBars', 'linearCustomData', 'summary','groupSummary', 'multipleBarsOwnData'].includes(chartData.config.type)  && this.echartOptions">` należy dopisać nasz typ wykresu żeby się wyświetlał w domyślnym trybie - jako prosty wykres generowany na podstawie `options`
 
-1. (Opcjonalnie) Ostatnią czynnością jest kolorowanie wykresu. W `ColorsGenerator.ts` dodajemy do słownika x nowy wpis `[MyChartGenerator.name] = (o) => this.myChartGenerator(o);`
+8. (Opcjonalnie) Ostatnią czynnością jest kolorowanie wykresu. W `ColorsGenerator.ts` dodajemy do słownika x nowy wpis `[MyChartGenerator.name] = (o) => this.myChartGenerator(o);`
 oraz nową funkcję do klasy 
 
 ```typescript 
