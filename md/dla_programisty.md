@@ -41,9 +41,8 @@ Serie danych pochodzą bezośrednio z response z serwera i są dostępne pod `th
 
 3. Otwieramy plik `reports/editor/chart-editor-view.component.ts`
 4. Szykujemy obrazek-miniaturkę wykresu i umieszczamy ją w `assets/`
-5. W `reports/editor/chart-editor-view.component.ts` ctrl+f ` <nz-tab nzTitle="Wygląd i układ">` 
-W elemencie `<section class="query-marker"></section>` dodajemy markup
-
+5. W `reports/editor/chart-editor-view.component.ts` ctrl+f ` <nz-tab nzTitle="Wygląd i układ">`  <br>
+ W elemencie `<section class="query-marker"></section>` dodajemy markup <br>
  ```html
  <div class="spacer"></div>
 <figure class="indicator-card indicator-card-velvet preset"
@@ -70,14 +69,12 @@ W elemencie `<section class="query-marker"></section>` dodajemy markup
 7. Teraz należy wyświetlić gotowy wykres. Do fragmentu `  <section class="chart-area" *ngIf="['multipleChoice', 'groupedBars', 'multipleBars', 'linearCustomData', 'summary','groupSummary', 'multipleBarsOwnData'].includes(chartData.config.type)  && this.echartOptions">` należy dopisać nasz typ wykresu żeby się wyświetlał w domyślnym trybie - jako prosty wykres generowany na podstawie `options`
 
 8. (Opcjonalnie) Ostatnią czynnością jest kolorowanie wykresu. W `ColorsGenerator.ts` dodajemy do słownika x nowy wpis `[MyChartGenerator.name] = (o) => this.myChartGenerator(o);`
-oraz nową funkcję do klasy 
-
+oraz nową funkcję do klasy <br>
 ```typescript 
 myChartGenerator(options: EChartsOption): EChartsOption {
     return options;
   }
 ```
-która modyfikuje i zwraca obiekt options w celu nadania kolorów i kosmetyki konkretnym seriom lub elementom.
-
+która modyfikuje i zwraca obiekt options w celu nadania kolorów i kosmetyki konkretnym seriom lub elementom. <br>
 Jeżeli nie jest to potrzebne można nic nie dodawać.
 
