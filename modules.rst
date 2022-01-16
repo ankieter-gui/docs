@@ -35,4 +35,5 @@ Dla programisty
    grammar
    setup
    table
+   main
 
