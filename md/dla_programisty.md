@@ -3,14 +3,14 @@
 W poniższym rozdziale przedstawiono dokumentację modułów wykorzystywanych na serwerze.
 
 
-# Jak dodać nowy wykres?
-Wykresy są generowane za pomocą biblioteki apache echarts [https://echarts.apache.org/]. Aby dodać nowy wykres, najłatwiej odwiedzić stronę z przykładami [https://echarts.apache.org/examples/en/index.html] i poszukać wykresu zbliżonego. Po wejściu na jego podstronę można eksperymentować, dostosowując interaktywnie różne opcje. Gdy stworzymy już konfigurację taką jaką chcemy, możemy przejść do integracji nowego wykresu do aplikacji. Zapisz gdzieś obiekt JSON options do użycia później.
+# Jak dodać nowy rodzaj wykresu?
+Wykresy są generowane za pomocą biblioteki [https://echarts.apache.org/](apache echarts). Aby dodać nowy wykres, najłatwiej odwiedzić stronę z [https://echarts.apache.org/examples/en/index.html](przykładami) i poszukać wykresu zbliżonego. Po wejściu na jego podstronę można eksperymentować, dostosowując interaktywnie różne opcje. Gdy stworzymy już konfigurację taką jaką chcemy, możemy przejść do integracji nowego wykresu do aplikacji. Zapisz gdzieś obiekt JSON options do użycia później.
 
 Tworzenie wykresu jest kilkuetapowe - najpierw dane do serwowane do klasy generującej `options` - obiekt JSONa, następnie jest on ponowanie modyfikowany przez `ColorsGenerator`. Pełny proces generowania nowego wykresu jest zawarty w ` generateChart(series: any, chartElement: ChartReportElement, reportId, namingDictioanry, dictionaryOverrides, localOverrides = undefined,fullQuery=undefined): EChartsOption` w pliku `charts.service.ts`.
 
 Klasa generująca `options` musi dziedziczyć po `AbstractChartGenerator`. Każda taka klasa pochodna musi zostać także zarejestrowana w funkcji: `getGenerator` w `charts.service.ts` przez dopisanie do słownika `strategyType` nowododanej klasy jako wartość. Kluczem niech będzie krótka nazwa `string` używana do identyfikacji klasy. Taki słownik jest workaroundem bo przez niektóre ograniczenia Angulara nie można podać klasy jako first class object w template komponentu.  
 
-## Tutorial 
+## Tutorial
 1. Tworzymy nowy plik o nazwie MyChart.ts.
 1. Wklejamy tam szablon klasy generującej `options` wykresu
 ```typescript
@@ -56,7 +56,7 @@ Serie danych pochodzą bezośrednio z response z serwera i są dostępne pod `th
 ```
  Do uzupełniania: tooltip, miniaturka, nazwa i `(click)="pickPreset('MyChart');"`,  gdzie MyChart to nazwa naszego nowego wykresu identyczną z ustaloną wcześniej.
 
-6. Do funkcji pickPreset w tym samym pliku dopisujemy klucz do słownika `fun`. 
+6. Do funkcji pickPreset w tym samym pliku dopisujemy klucz do słownika `fun`.
 <br> Wartością jest funkcja bez argumentów która ustawia różne parametry charakterystyczne dla tego rodzaju wykresu i sposób w jaki układane jest zapytanie do bazy danych. <br>
  Możemy schować prawą kolumnę `Grupuj przez` ustawiając `this.hideGrupBy=true;`, schować panel wybierania rodzajów agregeacji ` this.hideData=true;`. <br>
  Zmienić zachowania po kliknięciu jakiegoś elementu interfejsu: ..
@@ -70,11 +70,10 @@ Serie danych pochodzą bezośrednio z response z serwera i są dostępne pod `th
 
 8. (Opcjonalnie) Ostatnią czynnością jest kolorowanie wykresu. W `ColorsGenerator.ts` dodajemy do słownika x nowy wpis `[MyChartGenerator.name] = (o) => this.myChartGenerator(o);`
 oraz nową funkcję do klasy <br>
-```typescript 
+```typescript
 myChartGenerator(options: EChartsOption): EChartsOption {
     return options;
   }
 ```
 która modyfikuje i zwraca obiekt options w celu nadania kolorów i kosmetyki konkretnym seriom lub elementom. <br>
 Jeżeli nie jest to potrzebne można nic nie dodawać.
-
