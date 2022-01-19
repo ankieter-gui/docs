@@ -10,7 +10,7 @@ Tworzenie wykresu jest kilkuetapowe - najpierw dane do serwowane do klasy generu
 
 Klasa generująca `options` musi dziedziczyć po `AbstractChartGenerator`. Każda taka klasa pochodna musi zostać także zarejestrowana w funkcji: `getGenerator` w `charts.service.ts` przez dopisanie do słownika `strategyType` nowododanej klasy jako wartość. Kluczem niech będzie krótka nazwa `string` używana do identyfikacji klasy. Taki słownik jest workaroundem bo przez niektóre ograniczenia Angulara nie można podać klasy jako first class object w template komponentu.  
 
-## Tutorial
+Aby dodać nowy wykres:
 1. Tworzymy nowy plik o nazwie MyChart.ts.
 1. Wklejamy tam szablon klasy generującej `options` wykresu
 ```typescript
