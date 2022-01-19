@@ -49,7 +49,7 @@ exclude_patterns = [
     'globals.rst'
 ]
 
-# language = 'pl'
+language = 'pl'
 
 
 
