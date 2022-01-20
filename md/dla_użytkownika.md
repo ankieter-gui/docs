@@ -46,7 +46,7 @@ Umożliwia wyświetlenie pytań na jednej stronie.
 ### Pytanie wielokrotnego wyboru
 ![img_6.png](../img/img_editor_1.png)
 
-Dodatkowo można określić warunki wyświetlenia pytania.
+#### Dodatkowo można określić warunki wyświetlenia pytania.
 ![img_7.png](../img/img_editor_cond.png)
 
 ## Dodawanie wyników z ankiety
@@ -73,19 +73,19 @@ Raport umożliwia dodanie pól tekstowych oraz wykresów. Pola można przestawia
 
 ![img_11.png](../img/img_11.png)
 
-Dodanie elementu tekstowego
+## Dodanie elementu tekstowego
 ![img.png](../img/img_report4.png)
 
-Dodanie wykresu
-Można wybrać typ wykresu
+## Dodanie wykresu
+#### Można wybrać typ wykresu
 ![img_1.png](../img/img_report5.png)
 
-Dalej wskazuje się pytanie będące źródłem danych oraz pytanie, po którym będą filtrowane odpowiedzi.
+#### Dalej wskazuje się pytanie będące źródłem danych oraz pytanie, po którym będą filtrowane odpowiedzi.
 ![img_2.png](../img/img_report6.png)
 
-Wygenerowany wykres
+#### Wygenerowany wykres
 ![img_3.png](../img/img_report7.png)
 
-Dodatkowo istnieje możliwość nadpisania etykiety dla całego raportu oraz filtrowanie ankiety przez odpowiedź.
+#### Dodatkowo istnieje możliwość nadpisania etykiety dla całego raportu oraz filtrowanie ankiety przez odpowiedź.
 ![img_report3.png](../img/img_report3.png)
 
