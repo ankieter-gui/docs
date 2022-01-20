@@ -20,30 +20,30 @@ Albo takie, które są użytkownikowi udostępnione.
 
 ![img_7.png](../img/img_7.png)
 
-## Edytor ankiet
+# Edytor ankiet
 
 Edytor ankiet służy do wygenerowaniu ankiety w formacie xml.
 
 ![img.png](../img/img.png)
 
-### Strona
+## Strona
 Umożliwia wyświetlenie pytań na jednej stronie.
 
-#### Informacja
+### Informacja
 ![img_8.png](../img/img_info.png)
 
-### Typy pytań dostępne w edytorze
+## Typy pytań dostępne w edytorze
 
-#### Pytanie pojedyńczego wyboru
+### Pytanie pojedyńczego wyboru
 ![img_3.png](../img/img_3.png)
 
-#### Pytanie tekstowe
+### Pytanie tekstowe
 ![img_4.png](../img/img_text.png)
 
-#### Pytanie pojedynczego wyboru z wieloma podpytaniami
+### Pytanie pojedynczego wyboru z wieloma podpytaniami
 ![img_5.png](../img/img_editor_2.png)
 
-#### Pytanie wielokrotnego wyboru
+### Pytanie wielokrotnego wyboru
 ![img_6.png](../img/img_editor_1.png)
 
 Dodatkowo można określić warunki wyświetlenia pytania.
@@ -67,7 +67,7 @@ Należy kliknąć przycisk `OK`. Wyniki ankiety zostaną dodane i wyświetlą si
 
 ![img_12.png](../img/img_12.png)
 
-## Edytor raportów
+# Edytor raportów
 
 Raport umożliwia dodanie pól tekstowych oraz wykresów. Pola można przestawiać.
 
