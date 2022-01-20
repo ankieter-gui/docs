@@ -80,7 +80,7 @@ Ponadto, klauzula `get` jest _tablicą tablic_, dzięki temu do zapytania można
   "get":    [["Ocena dziekanatu"], ["Ocena zajęć"], ["Ocena prowadzących"]],
   "as":     ["mean"],
   "by":     ["Rok studiów"],
-  "if":     [0, "!=", "Odmowa odpowiedzi"]
+  "if":     [0, "!=", "Odmowa odpowiedzi"],
   "except": ["rok studiów", "=", "1"]
 }
 ```
